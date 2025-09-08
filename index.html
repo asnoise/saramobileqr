@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M/S SARA MOBILE </title>
+    <title>Your Business Name</title>
     <style>
         body {
             margin: 0;
@@ -20,6 +20,7 @@
         .container {
             text-align: center;
             padding: 20px;
+            max-width: 90%; /* Ensure container doesn't get too wide on large screens */
         }
         .logo {
             margin-bottom: 30px;
@@ -28,18 +29,29 @@
             max-width: 200px; /* Adjust as needed */
             height: auto;
         }
+        h1 {
+            font-size: 2.5em; /* Larger heading */
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+        }
         .links a {
             display: block;
-            margin: 15px 0;
-            padding: 10px 20px;
+            margin: 15px auto; /* Centered buttons */
+            padding: 12px 25px;
             background-color: #333;
             color: #fff;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            border-radius: 8px; /* Slightly more rounded corners */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for subtle hover effect */
+            max-width: 250px; /* Limit button width */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
         }
         .links a:hover {
             background-color: #555;
+            transform: translateY(-2px); /* Lift effect on hover */
         }
 
         /* Mobile responsiveness */
@@ -47,9 +59,16 @@
             .logo img {
                 max-width: 150px;
             }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+            }
             .links a {
-                padding: 12px;
-                font-size: 1.1em;
+                padding: 10px 20px;
+                font-size: 1em;
+                max-width: 200px;
             }
         }
     </style>
@@ -57,13 +76,14 @@
 <body>
     <div class="container">
         <div class="logo">
+            <!-- Ensure 'smlogo.png' is in the same directory as this index.html file -->
             <img src="smlogo.png" alt="Your Business Logo">
         </div>
         <h1>Welcome!</h1>
         <p>Connect with us on:</p>
         <div class="links">
-            <a href="https://shorturl.at/hMhxC" target="_blank">Google Reviews</a>
-            <a href="https://shorturl.at/JonTa" target="_blank">Facebook</a>
+            <a href="https://shorturl.at/hMhxC" target="_blank" rel="noopener noreferrer">Google Reviews</a>
+            <a href="https://shorturl.at/JonTa" target="_blank" rel="noopener noreferrer">Facebook</a>
         </div>
     </div>
 </body>
